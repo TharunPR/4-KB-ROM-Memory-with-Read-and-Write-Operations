@@ -26,7 +26,7 @@ always #5 clk = ~clk;  // Toggle clock every 5 ns
 // Test procedure
 initial begin
     // Initialize inputs
-    clk = 0;
+    clk = 1;
     write_enable = 0;
     address = 0;
     data_in = 0;
