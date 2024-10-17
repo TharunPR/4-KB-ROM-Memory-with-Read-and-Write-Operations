@@ -132,7 +132,7 @@ endmodule
 ```
 **Output Waveform:**
 
-![Screenshot 2024-10-14 215727](https://github.com/user-attachments/assets/5a13351b-71a4-4896-bcf6-527813af9df1)
+![Screenshot 2024-10-17 141913](https://github.com/user-attachments/assets/d9892720-1a48-4487-95f0-1b5407abd6e3)
 
 **Conclusion:**
 
