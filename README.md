@@ -1,4 +1,4 @@
-# 4KB ROM Memory with Read and Write Operation using Verilog HDL and Testbench Verification
+# Exp-No: 07 - 4KB ROM Memory with Read and Write Operation using Verilog HDL and Testbench Verification
 
 **Aim:** <br>
 <br>
@@ -11,31 +11,31 @@
 <br>
 **Procedure:** <br>
 <br>
-&emsp;**Launch Vivado 2023.1:** <br>
+**Launch Vivado 2023.1:** <br>
 <br>
 &emsp;&emsp;Open Vivado and create a new project.<br>
 <br>
-&emsp;**Design the Verilog Code for ROM:** <br>
+**Design the Verilog Code for ROM:** <br>
 <br>
 &emsp;&emsp;Write the Verilog code for a 4KB ROM memory with read and write capabilities.<br>
 <br>
-&emsp;**Create the Testbench:** <br>
+**Create the Testbench:** <br>
 <br>
 &emsp;&emsp;Write a testbench to simulate both the read and write operations, verifying that the data is correctly written to and read from the memory.<br>
 <br>
-&emsp;**Add the Verilog Files:** <br>
+**Add the Verilog Files:** <br>
 <br>
 &emsp;&emsp;Add the ROM Verilog module and the testbench file to the project.<br>
 <br>
-&emsp;**Run Simulation:** <br>
+**Run Simulation:** <br>
 <br>
 &emsp;&emsp;Run the behavioral simulation in Vivado and check the memory's read and write operations.<br>
 <br> 
-&emsp;**Observe the Waveforms:** <br>
+**Observe the Waveforms:** <br>
 <br>
 &emsp;&emsp;Analyze the waveform to verify that the memory read and write operations work as expected.<br>
 <br>
-&emsp;**Save and Document Results:** <br>
+**Save and Document Results:** <br>
 <br>
 &emsp;&emsp;Capture the waveform and include the simulation results in the final report.<br>
 <br>
@@ -102,6 +102,20 @@ module rom_memory_tb;
                  $time, write_enable, address, data_in, data_out);
     end
 endmodule
+
+```
+**Sample Output:**
+```
+
+Time = 0 | Write Enable = 0 | Address = 000 | Data In = 00 | Data Out = xx
+Time = 10000 | Write Enable = 1 | Address = 000 | Data In = a5 | Data Out = xx
+Time = 20000 | Write Enable = 1 | Address = 001 | Data In = 5a | Data Out = xx
+Time = 30000 | Write Enable = 1 | Address = 002 | Data In = ff | Data Out = xx
+Time = 40000 | Write Enable = 1 | Address = 003 | Data In = 00 | Data Out = xx
+Time = 50000 | Write Enable = 0 | Address = 000 | Data In = 00 | Data Out = a5
+Time = 60000 | Write Enable = 0 | Address = 001 | Data In = 00 | Data Out = 5a
+Time = 70000 | Write Enable = 0 | Address = 002 | Data In = 00 | Data Out = ff
+Time = 80000 | Write Enable = 0 | Address = 003 | Data In = 00 | Data Out = 00
 
 ```
 **Output Waveform:** 
